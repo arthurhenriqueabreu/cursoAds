@@ -75,7 +75,46 @@ void celsiusParaFahrenheit (){
 //Recebe 2 números inteiros e retorna o maior entre eles
 
 void maiorNumeroEntreDois(){
-	
+	int num1, num2, op;
+	do{
+		system("cls");
+		cout<<"Digite um número: ";
+		cin>>num1;
+		cout<<"Digite outro número: ";
+		cin>>num2;
+		if(num1>num2){
+			cout<<"O número "<<num1<<" é maior que o número "<<num2;
+		}else if(num2>num1){
+			cout<<"O número "<<num2<<" é maior que o número "<<num1;
+		}else {
+			cout<<"Os números sâo iguais!";
+		}
+		cout<<"\n\n\nDigite [1] para repetir\n";
+		cout<<"Digite [2] para sair\n";
+		cin>>op;
+		if(op !=1 && op!=2){
+			do{
+			system("cls");
+			cout<<"Opção inválida!\n";
+			cout<<"\n\n\nDigite [1] para repetir\n";
+			cout<<"Digite [2] para sair\n";
+			cin>>op;
+			}while(op!=1 && op!=2);
+		}
+	}while (op!=2);
+}
+
+void fatorialDeUmNumero(){
+	int numero, fatorial;
+	do{
+		system("cls");
+		cout<<"Digite um número: ";
+		cin>>numero;
+		for(int i = 1; fatorial ){
+			
+		}
+		cout<<"A fatorial desse número é "<<fatorial;
+	}while(op!=2);
 }
 
 main(){
@@ -84,11 +123,28 @@ main(){
 	do{
 		
 		system("cls");
-		cout<<"--------------Lista de exercícios 7--------------\n";
-		cout<<"Seleciona uma opção\n";
-		cout<<"[1] Converte temperatura Celsius em Fahrenheit.\n";
-		cout<<"[2] Verifica o maior número entre 2 inteiros. \n";
-		cout<<"[3] Fatorial de um número. \n";
+		cout<<"--------------Lista de Exercícios 7--------------\n";
+        cout<<"Selecione uma opção\n";
+        cout<<"[1] Converte temperatura Celsius em Fahrenheit.\n";
+        cout<<"[2] Verifica o maior número entre 2 inteiros. \n";
+        cout<<"[3] Fatorial de um número. \n";
+        cout<<"[4] Média de três números inteiros. \n";
+        cout<<"[5] Verificador de número primo. \n";
+        cout<<"[6] Conversor de letra minúscula em maiúscula. \n";
+        cout<<"[7] Verifica se é vogal ou consoante. \n";
+        cout<<"[8] Compara dois caracteres e retorna o que vem primeiro no alfabeto. \n";
+        cout<<"[9] Converte Fahrenheit para Celsius.\n";
+        cout<<"[10] Calcula a área de um triângulo. \n";
+        cout<<"[11] Calcula o consumo médio de combustível. \n";
+        cout<<"[12] Verifica se um número é par ou ímpar. \n";
+        cout<<"[13] Imprime o menor número entre dois. \n";
+        cout<<"[14] Exibe o maior número entre três. \n";
+        cout<<"[15] Exibe o menor número entre três. \n";
+        cout<<"[16] Repete um caractere n vezes. \n";
+        cout<<"[17] Soma de um número inteiro e um decimal. \n";
+        cout<<"[18] Sair \n";
+        cout<<"\n\n-----------------------------------------------------------\n\n";
+        cout<<"Escolha uma opção: ";
 		cin>>op;
 		switch(op){
 		case 1:
@@ -97,6 +153,15 @@ main(){
 		
 		case 2:
 			maiorNumeroEntreDois();
+			break;
+		case 3:
+			fatorialDeUmNumero();
+			break;
+		case 18:
+			cout<<"Tchau!";
+			break;
+		default:
+			cout<<"Opção inválida!";
 			break;
 		}
 	}while(op!=18);
