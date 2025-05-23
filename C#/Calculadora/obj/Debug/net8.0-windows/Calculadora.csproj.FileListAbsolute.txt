@@ -1,0 +1,17 @@
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora\bin\Debug\net8.0-windows\Calculadora.exe
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora\bin\Debug\net8.0-windows\Calculadora.deps.json
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora\bin\Debug\net8.0-windows\Calculadora.runtimeconfig.json
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora\bin\Debug\net8.0-windows\Calculadora.dll
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora\bin\Debug\net8.0-windows\Calculadora.pdb
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora\obj\Debug\net8.0-windows\Calculadora.Form1.resources
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora\obj\Debug\net8.0-windows\Calculadora.csproj.GenerateResource.cache
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora\obj\Debug\net8.0-windows\Calculadora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora\obj\Debug\net8.0-windows\Calculadora.AssemblyInfoInputs.cache
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora\obj\Debug\net8.0-windows\Calculadora.AssemblyInfo.cs
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora\obj\Debug\net8.0-windows\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora\obj\Debug\net8.0-windows\Calculadora.sourcelink.json
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora\obj\Debug\net8.0-windows\Calculadora.dll
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora\obj\Debug\net8.0-windows\refint\Calculadora.dll
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora\obj\Debug\net8.0-windows\Calculadora.pdb
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora\obj\Debug\net8.0-windows\Calculadora.genruntimeconfig.cache
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora\obj\Debug\net8.0-windows\ref\Calculadora.dll

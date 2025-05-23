@@ -105,15 +105,13 @@ void maiorNumeroEntreDois(){
 }
 
 void fatorialDeUmNumero(){
-	int numero, fatorial;
+	int numero, fatorial, op;
 	do{
 		system("cls");
 		cout<<"Digite um número: ";
 		cin>>numero;
-		for(int i = 1; fatorial ){
-			
-		}
 		cout<<"A fatorial desse número é "<<fatorial;
+		cin>>op;
 	}while(op!=2);
 }
 
