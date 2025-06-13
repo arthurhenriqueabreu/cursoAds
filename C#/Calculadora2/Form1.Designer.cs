@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtResultado = new TextBox();
             btnDivision = new Button();
             btnMultiplication = new Button();
             btnAdittion = new Button();
@@ -46,15 +45,8 @@
             btnDelete = new Button();
             btnEnter = new Button();
             btnBackspace = new Button();
+            lblResultado = new Label();
             SuspendLayout();
-            // 
-            // txtResultado
-            // 
-            txtResultado.Font = new Font("Segoe UI", 40F);
-            txtResultado.Location = new Point(12, 12);
-            txtResultado.Name = "txtResultado";
-            txtResultado.Size = new Size(285, 78);
-            txtResultado.TabIndex = 0;
             // 
             // btnDivision
             // 
@@ -217,18 +209,34 @@
             // 
             // btnBackspace
             // 
+            btnBackspace.Font = new Font("Segoe UI", 25F);
             btnBackspace.Location = new Point(154, 110);
             btnBackspace.Name = "btnBackspace";
             btnBackspace.Size = new Size(136, 65);
             btnBackspace.TabIndex = 17;
-            btnBackspace.Text = "<-----";
+            btnBackspace.Text = "←";
             btnBackspace.UseVisualStyleBackColor = true;
+            btnBackspace.Click += btnBackspace_Click;
+            // 
+            // lblResultado
+            // 
+            lblResultado.Anchor = AnchorStyles.Right;
+            lblResultado.Font = new Font("Segoe UI", 40F);
+            lblResultado.ImageAlign = ContentAlignment.MiddleRight;
+            lblResultado.Location = new Point(26, 23);
+            lblResultado.Name = "lblResultado";
+            lblResultado.Size = new Size(264, 72);
+            lblResultado.TabIndex = 18;
+            lblResultado.Text = "Resultado";
+            lblResultado.TextAlign = ContentAlignment.MiddleRight;
+            lblResultado.Click += lblResultado_Click_1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(309, 472);
+            Controls.Add(lblResultado);
             Controls.Add(btnBackspace);
             Controls.Add(btnEnter);
             Controls.Add(btnDelete);
@@ -246,16 +254,12 @@
             Controls.Add(btnAdittion);
             Controls.Add(btnMultiplication);
             Controls.Add(btnDivision);
-            Controls.Add(txtResultado);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private TextBox txtResultado;
         private Button btnDivision;
         private Button btnMultiplication;
         private Button btnAdittion;
@@ -273,5 +277,6 @@
         private Button btnDelete;
         private Button btnEnter;
         private Button btnBackspace;
+        private Label lblResultado;
     }
 }

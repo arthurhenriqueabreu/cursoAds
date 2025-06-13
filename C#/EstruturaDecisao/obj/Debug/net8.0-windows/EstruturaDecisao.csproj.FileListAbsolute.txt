@@ -1,0 +1,17 @@
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\EstruturaDecisao\bin\Debug\net8.0-windows\EstruturaDecisao.exe
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\EstruturaDecisao\bin\Debug\net8.0-windows\EstruturaDecisao.deps.json
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\EstruturaDecisao\bin\Debug\net8.0-windows\EstruturaDecisao.runtimeconfig.json
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\EstruturaDecisao\bin\Debug\net8.0-windows\EstruturaDecisao.dll
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\EstruturaDecisao\bin\Debug\net8.0-windows\EstruturaDecisao.pdb
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\EstruturaDecisao\obj\Debug\net8.0-windows\EstruturaDecisao.Form1.resources
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\EstruturaDecisao\obj\Debug\net8.0-windows\EstruturaDecisao.csproj.GenerateResource.cache
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\EstruturaDecisao\obj\Debug\net8.0-windows\EstruturaDecisao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\EstruturaDecisao\obj\Debug\net8.0-windows\EstruturaDecisao.AssemblyInfoInputs.cache
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\EstruturaDecisao\obj\Debug\net8.0-windows\EstruturaDecisao.AssemblyInfo.cs
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\EstruturaDecisao\obj\Debug\net8.0-windows\EstruturaDecisao.csproj.CoreCompileInputs.cache
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\EstruturaDecisao\obj\Debug\net8.0-windows\EstruturaDecisao.sourcelink.json
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\EstruturaDecisao\obj\Debug\net8.0-windows\EstruturaDecisao.dll
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\EstruturaDecisao\obj\Debug\net8.0-windows\refint\EstruturaDecisao.dll
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\EstruturaDecisao\obj\Debug\net8.0-windows\EstruturaDecisao.pdb
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\EstruturaDecisao\obj\Debug\net8.0-windows\EstruturaDecisao.genruntimeconfig.cache
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\EstruturaDecisao\obj\Debug\net8.0-windows\ref\EstruturaDecisao.dll
