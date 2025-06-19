@@ -11,144 +11,68 @@ namespace Calculadora2
             lblResultado.Text = resultado.ToString();
         }
 
-        private void btnNum1_Click(object sender, EventArgs e)
+        private void AdicionarNumero(int numero)
         {
             if (estagio == 1)
             {
-                num1 += 1;
+                num1 += numero.ToString();
                 lblResultado.Text = num1;
             }
             else
             {
                 num2 += 1;
-                lblResultado.Text = num2;
+                lblResultado.Text = numero.ToString();
             }
+        }
+
+        private void btnNum1_Click(object sender, EventArgs e)
+        {
+            AdicionarNumero(1);
         }
 
         private void btnNum2_Click(object sender, EventArgs e)
         {
-            if (estagio == 1)
-            {
-                num1 += 2;
-                lblResultado.Text = num1;
-            }
-            else
-            {
-                num2 += 2;
-                lblResultado.Text = num2;
-            }
+            AdicionarNumero(2);
         }
 
         private void btnNum3_Click(object sender, EventArgs e)
         {
-            if (estagio == 1)
-            {
-                num1 += 3;
-                lblResultado.Text = num1;
-            }
-            else
-            {
-                num2 += 3;
-                lblResultado.Text = num2;
-            }
+            AdicionarNumero(3);
         }
 
         private void btnNum4_Click(object sender, EventArgs e)
         {
-            if (estagio == 1)
-            {
-                num1 += 4;
-                lblResultado.Text = num1;
-            }
-            else
-            {
-                num2 += 4;
-                lblResultado.Text = num2;
-            }
+            AdicionarNumero(4);
         }
 
         private void btnNum5_Click(object sender, EventArgs e)
         {
-            if (estagio == 1)
-            {
-                num1 += 5;
-                lblResultado.Text = num1;
-            }
-            else
-            {
-                num2 += 5;
-                lblResultado.Text = num2;
-            }
+            AdicionarNumero(5);
         }
 
         private void btnNum6_Click(object sender, EventArgs e)
         {
-            if (estagio == 1)
-            {
-                num1 += 6;
-                lblResultado.Text = num1;
-            }
-            else
-            {
-                num2 += 6;
-                lblResultado.Text = num2;
-            }
+            AdicionarNumero(6);
         }
 
         private void btnNum7_Click(object sender, EventArgs e)
         {
-            if (estagio == 1)
-            {
-                num1 += 7;
-                lblResultado.Text = num1;
-            }
-            else
-            {
-                num2 += 7;
-                lblResultado.Text = num2;
-            }
+            AdicionarNumero(7);
         }
 
         private void btnNum8_Click(object sender, EventArgs e)
         {
-            if (estagio == 1)
-            {
-                num1 += 8;
-                lblResultado.Text = num1;
-            }
-            else
-            {
-                num2 += 8;
-                lblResultado.Text = num2;
-            }
+            AdicionarNumero(8);
         }
 
         private void btnNum9_Click(object sender, EventArgs e)
         {
-            if (estagio == 1)
-            {
-                num1 += 9;
-                lblResultado.Text = num1;
-            }
-            else
-            {
-                num2 += 9;
-                lblResultado.Text = num2;
-            }
+            AdicionarNumero(9);
         }
 
         private void btnNum0_Click(object sender, EventArgs e)
         {
-            if (estagio == 1)
-            {
-                num1 += 0;
-                lblResultado.Text = num1;
-            }
-            else
-            {
-                num2 += 0;
-                lblResultado.Text = num2;
-            }
+            AdicionarNumero(0);
         }
 
         private void btnAdittion_Click(object sender, EventArgs e)
