@@ -2,7 +2,7 @@ namespace Calculadora2
 {
     public partial class Form1 : Form
     {
-        string num1, num2;
+        string num1, num2, operador;
         double estagio = 1, resultado = 0, num1Double, num2Double;
 
         public Form1()
@@ -18,10 +18,9 @@ namespace Calculadora2
                 num1 += numero.ToString();
                 lblResultado.Text = num1;
             }
-            else
-            {
-                num2 += 1;
-                lblResultado.Text = numero.ToString();
+            else if (estagio == 2) {
+                num2 += numero.ToString();
+                lblResultado.Text = num2;
             }
         }
 
@@ -78,32 +77,57 @@ namespace Calculadora2
         private void btnAdittion_Click(object sender, EventArgs e)
         {
             estagio = 2;
-            lblResultado.Text = "+";
+            operador = "+";
+            lblResultado.Text = operador;
         }
 
         private void btnSubtraction_Click(object sender, EventArgs e)
         {
-            estagio = 3;
-            lblResultado.Text = "-";
+            estagio = 2;
+            operador = "-";
+            lblResultado.Text = operador;
         }
 
         private void btnDivision_Click(object sender, EventArgs e)
         {
-            estagio = 4;
-            lblResultado.Text = "/";
+            estagio = 2;
+            operador = "/";
+            lblResultado.Text = operador;
         }
 
         private void btnMultiplication_Click(object sender, EventArgs e)
         {
-            estagio = 5;
-            lblResultado.Text = "*";
+            estagio = 2;
+            operador = "*";
+            lblResultado.Text = operador;
         }
 
         private void btnEnter_Click(object sender, EventArgs e)
         {
             num1Double = double.Parse(num1);
             num2Double = double.Parse(num2);
-
+            switch (operador)
+            {
+                case "+":
+                    resultado = (num1Double + num2Double);
+                    lblResultado.Text = resultado.ToString();
+                    break;
+                case "-":
+                    resultado = num1Double - num2Double;
+                    lblResultado.Text = resultado.ToString();
+                    break;
+                case "*":
+                    resultado = num1Double * num2Double;
+                    lblResultado.Text = resultado.ToString();
+                    break;
+                case "/":
+                    resultado = num2Double != 0 ? num1Double / num2Double : 0;
+                    lblResultado.Text = resultado.ToString();
+                    break;
+                default:
+                    resultado = 0;
+                    break;
+            }
         }
 
         private void txtResultado_TextChanged(object sender, EventArgs e)
@@ -118,7 +142,7 @@ namespace Calculadora2
 
         private void lblResultado_Click_1(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnBackspace_Click(object sender, EventArgs e)
