@@ -10,7 +10,31 @@ namespace Calculadora2
             InitializeComponent();
             lblResultado.Text = resultado.ToString();
         }
-
+        private void Operacao(string operador)
+        {
+            switch (operador)
+            {
+                case "+":
+                    resultado = (num1Double + num2Double);
+                    lblResultado.Text = resultado.ToString();
+                    break;
+                case "-":
+                    resultado = num1Double - num2Double;
+                    lblResultado.Text = resultado.ToString();
+                    break;
+                case "*":
+                    resultado = num1Double * num2Double;
+                    lblResultado.Text = resultado.ToString();
+                    break;
+                case "/":
+                    resultado = num2Double != 0 ? num1Double / num2Double : 0;
+                    lblResultado.Text = resultado.ToString();
+                    break;
+                default:
+                    resultado = 0;
+                    break;
+            }
+        }
         private void AdicionarNumero(int numero)
         {
             if (estagio == 1)
@@ -18,9 +42,16 @@ namespace Calculadora2
                 num1 += numero.ToString();
                 lblResultado.Text = num1;
             }
-            else if (estagio == 2) {
+            else if (estagio == 2)
+            {
                 num2 += numero.ToString();
                 lblResultado.Text = num2;
+            }
+            else if (estagio == 3)
+            {
+                Operacao(operador);
+                resultado += numero;
+                lblResultado.Text = resultado.ToString();
             }
         }
 
@@ -106,28 +137,8 @@ namespace Calculadora2
         {
             num1Double = double.Parse(num1);
             num2Double = double.Parse(num2);
-            switch (operador)
-            {
-                case "+":
-                    resultado = (num1Double + num2Double);
-                    lblResultado.Text = resultado.ToString();
-                    break;
-                case "-":
-                    resultado = num1Double - num2Double;
-                    lblResultado.Text = resultado.ToString();
-                    break;
-                case "*":
-                    resultado = num1Double * num2Double;
-                    lblResultado.Text = resultado.ToString();
-                    break;
-                case "/":
-                    resultado = num2Double != 0 ? num1Double / num2Double : 0;
-                    lblResultado.Text = resultado.ToString();
-                    break;
-                default:
-                    resultado = 0;
-                    break;
-            }
+            Operacao(operador);
+            estagio = 3;
         }
 
         private void txtResultado_TextChanged(object sender, EventArgs e)
@@ -142,12 +153,23 @@ namespace Calculadora2
 
         private void lblResultado_Click_1(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnBackspace_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            estagio = 1;
+            num1 = "";
+            num2 = "";
+            operador = "";
+            resultado = 0;
+            lblResultado.Text = resultado.ToString();
         }
     }
 }
