@@ -32,3 +32,4 @@ C:\Users\User\Documents\GitRepos\cursoAds\C#\Calculadora2\obj\Debug\net8.0-windo
 C:\Users\User\Documents\GitRepos\cursoAds\C#\Calculadora2\obj\Debug\net8.0-windows\Calculadora2.pdb
 C:\Users\User\Documents\GitRepos\cursoAds\C#\Calculadora2\obj\Debug\net8.0-windows\Calculadora2.genruntimeconfig.cache
 C:\Users\User\Documents\GitRepos\cursoAds\C#\Calculadora2\obj\Debug\net8.0-windows\ref\Calculadora2.dll
+C:\Users\arthur.abreu1\Documents\cursoAds\C#\Calculadora2\obj\Debug\net8.0-windows\Calculadora2.Properties.Resources.resources

@@ -200,22 +200,25 @@
             // 
             // btnEnter
             // 
+            btnEnter.BackColor = SystemColors.MenuHighlight;
+            btnEnter.BackgroundImageLayout = ImageLayout.None;
+            btnEnter.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnEnter.Location = new Point(225, 323);
             btnEnter.Name = "btnEnter";
             btnEnter.Size = new Size(65, 136);
             btnEnter.TabIndex = 16;
-            btnEnter.Text = "Enter";
-            btnEnter.UseVisualStyleBackColor = true;
+            btnEnter.Text = "↵";
+            btnEnter.UseVisualStyleBackColor = false;
             btnEnter.Click += btnEnter_Click;
             // 
             // btnBackspace
             // 
-            btnBackspace.Font = new Font("Segoe UI", 25F);
+            btnBackspace.Font = new Font("Yu Gothic UI", 24.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnBackspace.Location = new Point(154, 110);
             btnBackspace.Name = "btnBackspace";
             btnBackspace.Size = new Size(136, 65);
             btnBackspace.TabIndex = 17;
-            btnBackspace.Text = "←";
+            btnBackspace.Text = "⌫";
             btnBackspace.UseVisualStyleBackColor = true;
             btnBackspace.Click += btnBackspace_Click;
             // 

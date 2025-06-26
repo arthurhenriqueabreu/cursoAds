@@ -49,9 +49,8 @@ namespace Calculadora2
             }
             else if (estagio == 3)
             {
-                Operacao(operador);
-                resultado += numero;
-                lblResultado.Text = resultado.ToString();
+                num1Double += resultado;
+                num1 = num1Double.ToString();
             }
         }
 
@@ -135,10 +134,18 @@ namespace Calculadora2
 
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            num1Double = double.Parse(num1);
-            num2Double = double.Parse(num2);
-            Operacao(operador);
-            estagio = 3;
+            if (!string.IsNullOrEmpty(num1) && !string.IsNullOrEmpty(num2))
+            {
+                num1Double = double.Parse(num1);
+                num2Double = double.Parse(num2);
+                Operacao(operador);
+
+                num1 = resultado.ToString(); // Resultado vira o novo num1
+                num2 = "";                   // Limpa num2 para possível próxima operação
+                estagio = 3;
+            }
+
+            lblResultado.Text = resultado.ToString();
         }
 
         private void txtResultado_TextChanged(object sender, EventArgs e)
@@ -158,7 +165,33 @@ namespace Calculadora2
 
         private void btnBackspace_Click(object sender, EventArgs e)
         {
-
+            if (estagio == 1) {
+                if (num1.Length != 1){
+                    num1 = num1.Remove(num1.Length - 1, 1);
+                    num1Double = double.Parse(num1);
+                    lblResultado.Text = num1;
+                }
+                else{
+                    num1 = "0";
+                    num1Double = double.Parse(num1);
+                    lblResultado.Text = num1;
+                }
+                
+            } else if (estagio == 2)
+            {
+                if(num2.Length != 1)
+                {
+                    num2 = num2.Remove(num2.Length - 1, 1);
+                    num2Double = double.Parse(num2);
+                    lblResultado.Text = num2;
+                }
+                else
+                {
+                    num2 = "0";
+                    num2Double = double.Parse(num2);
+                    lblResultado.Text = num2;
+                }
+            }
         }
 
 
