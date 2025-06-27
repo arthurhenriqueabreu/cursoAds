@@ -46,180 +46,264 @@
             btnEnter = new Button();
             btnBackspace = new Button();
             lblResultado = new Label();
+            button2 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // btnDivision
             // 
-            btnDivision.Location = new Point(225, 181);
+            btnDivision.BackColor = Color.FromArgb(224, 224, 224);
+            btnDivision.FlatAppearance.BorderSize = 0;
+            btnDivision.FlatStyle = FlatStyle.Flat;
+            btnDivision.Font = new Font("Microsoft Sans Serif", 24F);
+            btnDivision.ForeColor = Color.White;
+            btnDivision.Location = new Point(230, 181);
             btnDivision.Name = "btnDivision";
             btnDivision.Size = new Size(65, 65);
             btnDivision.TabIndex = 1;
             btnDivision.Text = "/";
-            btnDivision.UseVisualStyleBackColor = true;
+            btnDivision.UseVisualStyleBackColor = false;
             btnDivision.Click += btnDivision_Click;
             // 
             // btnMultiplication
             // 
-            btnMultiplication.Location = new Point(225, 252);
+            btnMultiplication.BackColor = Color.FromArgb(224, 224, 224);
+            btnMultiplication.FlatAppearance.BorderSize = 0;
+            btnMultiplication.FlatStyle = FlatStyle.Flat;
+            btnMultiplication.Font = new Font("Microsoft Sans Serif", 24F);
+            btnMultiplication.ForeColor = Color.White;
+            btnMultiplication.Location = new Point(159, 181);
             btnMultiplication.Name = "btnMultiplication";
             btnMultiplication.Size = new Size(65, 65);
             btnMultiplication.TabIndex = 2;
-            btnMultiplication.Text = "*";
-            btnMultiplication.UseVisualStyleBackColor = true;
+            btnMultiplication.Text = "X";
+            btnMultiplication.UseVisualStyleBackColor = false;
             btnMultiplication.Click += btnMultiplication_Click;
             // 
             // btnAdittion
             // 
-            btnAdittion.Location = new Point(12, 110);
+            btnAdittion.BackColor = Color.FromArgb(224, 224, 224);
+            btnAdittion.FlatAppearance.BorderSize = 0;
+            btnAdittion.FlatStyle = FlatStyle.Flat;
+            btnAdittion.Font = new Font("Microsoft Sans Serif", 24F);
+            btnAdittion.ForeColor = Color.White;
+            btnAdittion.Location = new Point(230, 323);
             btnAdittion.Name = "btnAdittion";
             btnAdittion.Size = new Size(65, 65);
             btnAdittion.TabIndex = 3;
             btnAdittion.Text = "+";
-            btnAdittion.UseVisualStyleBackColor = true;
+            btnAdittion.UseVisualStyleBackColor = false;
             btnAdittion.Click += btnAdittion_Click;
             // 
             // btnSubtraction
             // 
-            btnSubtraction.Location = new Point(83, 110);
+            btnSubtraction.BackColor = Color.FromArgb(224, 224, 224);
+            btnSubtraction.FlatAppearance.BorderSize = 0;
+            btnSubtraction.FlatStyle = FlatStyle.Flat;
+            btnSubtraction.Font = new Font("Microsoft Sans Serif", 24F);
+            btnSubtraction.ForeColor = Color.White;
+            btnSubtraction.Location = new Point(230, 252);
             btnSubtraction.Name = "btnSubtraction";
             btnSubtraction.Size = new Size(65, 65);
             btnSubtraction.TabIndex = 4;
             btnSubtraction.Text = "-";
-            btnSubtraction.UseVisualStyleBackColor = true;
+            btnSubtraction.UseVisualStyleBackColor = false;
             btnSubtraction.Click += btnSubtraction_Click;
             // 
             // btnNum9
             // 
-            btnNum9.Location = new Point(154, 181);
+            btnNum9.BackColor = Color.FromArgb(224, 224, 224);
+            btnNum9.FlatAppearance.BorderSize = 0;
+            btnNum9.FlatStyle = FlatStyle.Flat;
+            btnNum9.Font = new Font("Microsoft Sans Serif", 24F);
+            btnNum9.ForeColor = Color.White;
+            btnNum9.Location = new Point(159, 252);
             btnNum9.Name = "btnNum9";
             btnNum9.Size = new Size(65, 65);
             btnNum9.TabIndex = 9;
             btnNum9.Text = "9";
-            btnNum9.UseVisualStyleBackColor = true;
+            btnNum9.UseVisualStyleBackColor = false;
             btnNum9.Click += btnNum9_Click;
             // 
             // btnNum8
             // 
-            btnNum8.Location = new Point(83, 181);
+            btnNum8.BackColor = Color.FromArgb(224, 224, 224);
+            btnNum8.FlatAppearance.BorderSize = 0;
+            btnNum8.FlatStyle = FlatStyle.Flat;
+            btnNum8.Font = new Font("Microsoft Sans Serif", 24F);
+            btnNum8.ForeColor = Color.White;
+            btnNum8.Location = new Point(88, 252);
             btnNum8.Name = "btnNum8";
             btnNum8.Size = new Size(65, 65);
             btnNum8.TabIndex = 6;
             btnNum8.Text = "8";
-            btnNum8.UseVisualStyleBackColor = true;
+            btnNum8.UseVisualStyleBackColor = false;
             btnNum8.Click += btnNum8_Click;
             // 
             // btnNum7
             // 
-            btnNum7.Location = new Point(12, 181);
+            btnNum7.BackColor = Color.FromArgb(224, 224, 224);
+            btnNum7.FlatAppearance.BorderSize = 0;
+            btnNum7.FlatStyle = FlatStyle.Flat;
+            btnNum7.Font = new Font("Microsoft Sans Serif", 24F);
+            btnNum7.ForeColor = Color.White;
+            btnNum7.Location = new Point(17, 252);
             btnNum7.Name = "btnNum7";
             btnNum7.Size = new Size(65, 65);
             btnNum7.TabIndex = 5;
             btnNum7.Text = "7";
-            btnNum7.UseVisualStyleBackColor = true;
+            btnNum7.UseVisualStyleBackColor = false;
             btnNum7.Click += btnNum7_Click;
             // 
             // btnNum6
             // 
-            btnNum6.Location = new Point(154, 252);
+            btnNum6.BackColor = Color.FromArgb(224, 224, 224);
+            btnNum6.FlatAppearance.BorderSize = 0;
+            btnNum6.FlatStyle = FlatStyle.Flat;
+            btnNum6.Font = new Font("Microsoft Sans Serif", 24F);
+            btnNum6.ForeColor = Color.White;
+            btnNum6.Location = new Point(159, 323);
             btnNum6.Name = "btnNum6";
             btnNum6.Size = new Size(65, 65);
             btnNum6.TabIndex = 10;
             btnNum6.Text = "6";
-            btnNum6.UseVisualStyleBackColor = true;
+            btnNum6.UseVisualStyleBackColor = false;
             btnNum6.Click += btnNum6_Click;
             // 
             // btnNum5
             // 
-            btnNum5.Location = new Point(83, 252);
+            btnNum5.BackColor = Color.FromArgb(224, 224, 224);
+            btnNum5.FlatAppearance.BorderSize = 0;
+            btnNum5.FlatStyle = FlatStyle.Flat;
+            btnNum5.Font = new Font("Microsoft Sans Serif", 24F);
+            btnNum5.ForeColor = Color.White;
+            btnNum5.Location = new Point(88, 323);
             btnNum5.Name = "btnNum5";
             btnNum5.Size = new Size(65, 65);
             btnNum5.TabIndex = 9;
             btnNum5.Text = "5";
-            btnNum5.UseVisualStyleBackColor = true;
+            btnNum5.UseVisualStyleBackColor = false;
             btnNum5.Click += btnNum5_Click;
             // 
             // btnNum4
             // 
-            btnNum4.Location = new Point(12, 252);
+            btnNum4.BackColor = Color.FromArgb(224, 224, 224);
+            btnNum4.FlatAppearance.BorderSize = 0;
+            btnNum4.FlatStyle = FlatStyle.Flat;
+            btnNum4.Font = new Font("Microsoft Sans Serif", 24F);
+            btnNum4.ForeColor = Color.White;
+            btnNum4.Location = new Point(17, 323);
             btnNum4.Name = "btnNum4";
             btnNum4.Size = new Size(65, 65);
             btnNum4.TabIndex = 8;
             btnNum4.Text = "4";
-            btnNum4.UseVisualStyleBackColor = true;
+            btnNum4.UseVisualStyleBackColor = false;
             btnNum4.Click += btnNum4_Click;
             // 
             // btnNum3
             // 
-            btnNum3.Location = new Point(154, 323);
+            btnNum3.BackColor = Color.FromArgb(224, 224, 224);
+            btnNum3.FlatAppearance.BorderSize = 0;
+            btnNum3.FlatStyle = FlatStyle.Flat;
+            btnNum3.Font = new Font("Microsoft Sans Serif", 24F);
+            btnNum3.ForeColor = Color.White;
+            btnNum3.Location = new Point(159, 394);
             btnNum3.Name = "btnNum3";
             btnNum3.Size = new Size(65, 65);
             btnNum3.TabIndex = 13;
             btnNum3.Text = "3";
-            btnNum3.UseVisualStyleBackColor = true;
+            btnNum3.UseVisualStyleBackColor = false;
             btnNum3.Click += btnNum3_Click;
             // 
             // btnNum2
             // 
-            btnNum2.Location = new Point(83, 323);
+            btnNum2.BackColor = Color.FromArgb(224, 224, 224);
+            btnNum2.FlatAppearance.BorderSize = 0;
+            btnNum2.FlatStyle = FlatStyle.Flat;
+            btnNum2.Font = new Font("Microsoft Sans Serif", 24F);
+            btnNum2.ForeColor = Color.White;
+            btnNum2.Location = new Point(88, 394);
             btnNum2.Name = "btnNum2";
             btnNum2.Size = new Size(65, 65);
             btnNum2.TabIndex = 12;
             btnNum2.Text = "2";
-            btnNum2.UseVisualStyleBackColor = true;
+            btnNum2.UseVisualStyleBackColor = false;
             btnNum2.Click += btnNum2_Click;
             // 
             // btnNum1
             // 
-            btnNum1.Location = new Point(12, 323);
+            btnNum1.BackColor = Color.FromArgb(224, 224, 224);
+            btnNum1.FlatAppearance.BorderSize = 0;
+            btnNum1.FlatStyle = FlatStyle.Flat;
+            btnNum1.Font = new Font("Microsoft Sans Serif", 24F);
+            btnNum1.ForeColor = Color.White;
+            btnNum1.Location = new Point(17, 394);
             btnNum1.Name = "btnNum1";
             btnNum1.Size = new Size(65, 65);
             btnNum1.TabIndex = 11;
             btnNum1.Text = "1";
-            btnNum1.UseVisualStyleBackColor = true;
+            btnNum1.UseVisualStyleBackColor = false;
             btnNum1.Click += btnNum1_Click;
             // 
             // btnNum0
             // 
-            btnNum0.Location = new Point(12, 394);
+            btnNum0.BackColor = Color.FromArgb(224, 224, 224);
+            btnNum0.FlatAppearance.BorderSize = 0;
+            btnNum0.FlatStyle = FlatStyle.Flat;
+            btnNum0.Font = new Font("Microsoft Sans Serif", 24F);
+            btnNum0.ForeColor = Color.White;
+            btnNum0.Location = new Point(88, 465);
             btnNum0.Name = "btnNum0";
-            btnNum0.Size = new Size(136, 65);
+            btnNum0.Size = new Size(65, 65);
             btnNum0.TabIndex = 14;
             btnNum0.Text = "0";
-            btnNum0.UseVisualStyleBackColor = true;
+            btnNum0.UseVisualStyleBackColor = false;
             btnNum0.Click += btnNum0_Click;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(154, 394);
+            btnDelete.BackColor = Color.FromArgb(224, 224, 224);
+            btnDelete.FlatAppearance.BorderSize = 0;
+            btnDelete.FlatStyle = FlatStyle.Flat;
+            btnDelete.Font = new Font("Microsoft Sans Serif", 24F);
+            btnDelete.ForeColor = Color.White;
+            btnDelete.Location = new Point(17, 181);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(65, 65);
             btnDelete.TabIndex = 15;
-            btnDelete.Text = "DEL";
-            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Text = "C";
+            btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click;
             // 
             // btnEnter
             // 
-            btnEnter.BackColor = SystemColors.MenuHighlight;
+            btnEnter.BackColor = Color.FromArgb(224, 224, 224);
             btnEnter.BackgroundImageLayout = ImageLayout.None;
-            btnEnter.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnEnter.Location = new Point(225, 323);
+            btnEnter.FlatAppearance.BorderSize = 0;
+            btnEnter.FlatStyle = FlatStyle.Flat;
+            btnEnter.Font = new Font("Microsoft Sans Serif", 24F);
+            btnEnter.ForeColor = Color.White;
+            btnEnter.Location = new Point(230, 394);
             btnEnter.Name = "btnEnter";
             btnEnter.Size = new Size(65, 136);
             btnEnter.TabIndex = 16;
-            btnEnter.Text = "↵";
+            btnEnter.Text = "=";
             btnEnter.UseVisualStyleBackColor = false;
             btnEnter.Click += btnEnter_Click;
             // 
             // btnBackspace
             // 
-            btnBackspace.Font = new Font("Yu Gothic UI", 24.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnBackspace.Location = new Point(154, 110);
+            btnBackspace.BackColor = Color.FromArgb(224, 224, 224);
+            btnBackspace.FlatAppearance.BorderSize = 0;
+            btnBackspace.FlatStyle = FlatStyle.Flat;
+            btnBackspace.Font = new Font("Microsoft Sans Serif", 24F);
+            btnBackspace.ForeColor = Color.White;
+            btnBackspace.Location = new Point(88, 181);
             btnBackspace.Name = "btnBackspace";
-            btnBackspace.Size = new Size(136, 65);
+            btnBackspace.Size = new Size(65, 65);
             btnBackspace.TabIndex = 17;
             btnBackspace.Text = "⌫";
-            btnBackspace.UseVisualStyleBackColor = true;
+            btnBackspace.UseVisualStyleBackColor = false;
             btnBackspace.Click += btnBackspace_Click;
             // 
             // lblResultado
@@ -227,7 +311,7 @@
             lblResultado.Anchor = AnchorStyles.Right;
             lblResultado.Font = new Font("Segoe UI", 40F);
             lblResultado.ImageAlign = ContentAlignment.MiddleRight;
-            lblResultado.Location = new Point(26, 23);
+            lblResultado.Location = new Point(32, 75);
             lblResultado.Name = "lblResultado";
             lblResultado.Size = new Size(264, 72);
             lblResultado.TabIndex = 18;
@@ -235,11 +319,43 @@
             lblResultado.TextAlign = ContentAlignment.MiddleRight;
             lblResultado.Click += lblResultado_Click_1;
             // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(224, 224, 224);
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Microsoft Sans Serif", 24F);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(159, 465);
+            button2.Name = "button2";
+            button2.Size = new Size(65, 65);
+            button2.TabIndex = 20;
+            button2.Text = ",";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(224, 224, 224);
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Microsoft Sans Serif", 24F);
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(17, 465);
+            button3.Name = "button3";
+            button3.Size = new Size(65, 65);
+            button3.TabIndex = 21;
+            button3.Text = "+/-";
+            button3.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(309, 472);
+            BackColor = Color.White;
+            ClientSize = new Size(308, 546);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(lblResultado);
             Controls.Add(btnBackspace);
             Controls.Add(btnEnter);
@@ -259,6 +375,7 @@
             Controls.Add(btnMultiplication);
             Controls.Add(btnDivision);
             Name = "Form1";
+            Opacity = 0.95D;
             Text = "Form1";
             ResumeLayout(false);
         }
@@ -282,5 +399,7 @@
         private Button btnEnter;
         private Button btnBackspace;
         private Label lblResultado;
+        private Button button2;
+        private Button button3;
     }
 }

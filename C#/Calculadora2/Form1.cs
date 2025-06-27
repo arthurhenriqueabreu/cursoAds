@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace Calculadora2
 {
     public partial class Form1 : Form
@@ -40,17 +42,30 @@ namespace Calculadora2
             if (estagio == 1)
             {
                 num1 += numero.ToString();
-                lblResultado.Text = num1;
+                num1Double = double.Parse(num1);
+                lblResultado.Text = num1Double.ToString();
             }
             else if (estagio == 2)
             {
                 num2 += numero.ToString();
-                lblResultado.Text = num2;
+                num2Double = double.Parse(num2);
+                lblResultado.Text = num2Double.ToString();
             }
             else if (estagio == 3)
             {
                 num1Double += resultado;
                 num1 = num1Double.ToString();
+            }
+        }
+        private void AdicionarVirgula()
+        {
+            if (estagio == 1)
+            {
+                num1 += ".";
+            }else if (estagio == 2){
+                num2 += ".";
+            }else if(estagio == 3){
+                num1 += ".";
             }
         }
 
@@ -165,31 +180,35 @@ namespace Calculadora2
 
         private void btnBackspace_Click(object sender, EventArgs e)
         {
-            if (estagio == 1) {
-                if (num1.Length != 1){
+            if (estagio == 1)
+            {
+                if (num1.Length != 1)
+                {
                     num1 = num1.Remove(num1.Length - 1, 1);
                     num1Double = double.Parse(num1);
-                    lblResultado.Text = num1;
+                    lblResultado.Text = num1Double.ToString();
                 }
-                else{
+                else
+                {
                     num1 = "0";
                     num1Double = double.Parse(num1);
-                    lblResultado.Text = num1;
+                    lblResultado.Text = num1Double.ToString();
                 }
-                
-            } else if (estagio == 2)
+
+            }
+            else if (estagio == 2)
             {
-                if(num2.Length != 1)
+                if (num2.Length != 1)
                 {
                     num2 = num2.Remove(num2.Length - 1, 1);
                     num2Double = double.Parse(num2);
-                    lblResultado.Text = num2;
+                    lblResultado.Text = num2Double.ToString();
                 }
                 else
                 {
                     num2 = "0";
                     num2Double = double.Parse(num2);
-                    lblResultado.Text = num2;
+                    lblResultado.Text = num2Double.ToString();
                 }
             }
         }
@@ -203,6 +222,11 @@ namespace Calculadora2
             operador = "";
             resultado = 0;
             lblResultado.Text = resultado.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AdicionarVirgula(); 
         }
     }
 }
