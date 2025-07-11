@@ -57,7 +57,9 @@
             calculadoraDeIMCToolStripMenuItem = new ToolStripMenuItem();
             porcentagemToolStripMenuItem = new ToolStripMenuItem();
             temperaturaToolStripMenuItem = new ToolStripMenuItem();
+            tableLayoutDigitos = new TableLayoutPanel();
             contextMenuStrip1.SuspendLayout();
+            tableLayoutDigitos.SuspendLayout();
             SuspendLayout();
             // 
             // btnDivision
@@ -67,9 +69,9 @@
             btnDivision.FlatStyle = FlatStyle.Flat;
             btnDivision.Font = new Font("Microsoft Sans Serif", 24F);
             btnDivision.ForeColor = Color.White;
-            btnDivision.Location = new Point(201, 213);
+            btnDivision.Location = new Point(210, 127);
             btnDivision.Name = "btnDivision";
-            btnDivision.Size = new Size(94, 43);
+            btnDivision.Size = new Size(63, 56);
             btnDivision.TabIndex = 1;
             btnDivision.Text = "/";
             btnDivision.UseVisualStyleBackColor = false;
@@ -82,28 +84,34 @@
             btnMultiplication.FlatStyle = FlatStyle.Flat;
             btnMultiplication.Font = new Font("Microsoft Sans Serif", 24F);
             btnMultiplication.ForeColor = Color.White;
-            btnMultiplication.Location = new Point(105, 213);
+            btnMultiplication.Location = new Point(141, 84);
             btnMultiplication.Name = "btnMultiplication";
-            btnMultiplication.Size = new Size(90, 43);
+            btnMultiplication.Size = new Size(63, 37);
             btnMultiplication.TabIndex = 2;
             btnMultiplication.Text = "X";
             btnMultiplication.UseVisualStyleBackColor = false;
             btnMultiplication.Click += btnMultiplication_Click;
             // 
             // btnAdittion
-            // 
+            //
+            
             btnAdittion.BackColor = Color.FromArgb(224, 224, 224);
             btnAdittion.FlatAppearance.BorderSize = 0;
             btnAdittion.FlatStyle = FlatStyle.Flat;
             btnAdittion.Font = new Font("Microsoft Sans Serif", 24F);
             btnAdittion.ForeColor = Color.White;
-            btnAdittion.Location = new Point(230, 323);
+            btnAdittion.Location = new Point(210, 251);
             btnAdittion.Name = "btnAdittion";
-            btnAdittion.Size = new Size(65, 65);
+            btnAdittion.Size = new Size(63, 56);
             btnAdittion.TabIndex = 3;
             btnAdittion.Text = "+";
             btnAdittion.UseVisualStyleBackColor = false;
             btnAdittion.Click += btnAdittion_Click;
+            btnAdittion.FlatStyle = FlatStyle.Flat;
+            btnAdittion.FlatAppearance.BorderColor = Color.Gray;
+            btnAdittion.FlatAppearance.BorderSize = 1;
+            btnAdittion.ForeColor = Color.White;
+
             // 
             // btnSubtraction
             // 
@@ -112,9 +120,9 @@
             btnSubtraction.FlatStyle = FlatStyle.Flat;
             btnSubtraction.Font = new Font("Microsoft Sans Serif", 24F);
             btnSubtraction.ForeColor = Color.White;
-            btnSubtraction.Location = new Point(230, 262);
+            btnSubtraction.Location = new Point(210, 189);
             btnSubtraction.Name = "btnSubtraction";
-            btnSubtraction.Size = new Size(65, 55);
+            btnSubtraction.Size = new Size(63, 55);
             btnSubtraction.TabIndex = 4;
             btnSubtraction.Text = "-";
             btnSubtraction.UseVisualStyleBackColor = false;
@@ -127,9 +135,9 @@
             btnNum9.FlatStyle = FlatStyle.Flat;
             btnNum9.Font = new Font("Microsoft Sans Serif", 24F);
             btnNum9.ForeColor = Color.White;
-            btnNum9.Location = new Point(159, 262);
+            btnNum9.Location = new Point(141, 127);
             btnNum9.Name = "btnNum9";
-            btnNum9.Size = new Size(65, 55);
+            btnNum9.Size = new Size(63, 56);
             btnNum9.TabIndex = 9;
             btnNum9.Text = "9";
             btnNum9.UseVisualStyleBackColor = false;
@@ -142,9 +150,9 @@
             btnNum8.FlatStyle = FlatStyle.Flat;
             btnNum8.Font = new Font("Microsoft Sans Serif", 24F);
             btnNum8.ForeColor = Color.White;
-            btnNum8.Location = new Point(88, 262);
+            btnNum8.Location = new Point(72, 127);
             btnNum8.Name = "btnNum8";
-            btnNum8.Size = new Size(65, 55);
+            btnNum8.Size = new Size(63, 56);
             btnNum8.TabIndex = 6;
             btnNum8.Text = "8";
             btnNum8.UseVisualStyleBackColor = false;
@@ -157,9 +165,9 @@
             btnNum7.FlatStyle = FlatStyle.Flat;
             btnNum7.Font = new Font("Microsoft Sans Serif", 24F);
             btnNum7.ForeColor = Color.White;
-            btnNum7.Location = new Point(17, 262);
+            btnNum7.Location = new Point(3, 127);
             btnNum7.Name = "btnNum7";
-            btnNum7.Size = new Size(65, 55);
+            btnNum7.Size = new Size(63, 56);
             btnNum7.TabIndex = 5;
             btnNum7.Text = "7";
             btnNum7.UseVisualStyleBackColor = false;
@@ -172,9 +180,9 @@
             btnNum6.FlatStyle = FlatStyle.Flat;
             btnNum6.Font = new Font("Microsoft Sans Serif", 24F);
             btnNum6.ForeColor = Color.White;
-            btnNum6.Location = new Point(159, 323);
+            btnNum6.Location = new Point(141, 189);
             btnNum6.Name = "btnNum6";
-            btnNum6.Size = new Size(65, 65);
+            btnNum6.Size = new Size(63, 56);
             btnNum6.TabIndex = 10;
             btnNum6.Text = "6";
             btnNum6.UseVisualStyleBackColor = false;
@@ -187,9 +195,9 @@
             btnNum5.FlatStyle = FlatStyle.Flat;
             btnNum5.Font = new Font("Microsoft Sans Serif", 24F);
             btnNum5.ForeColor = Color.White;
-            btnNum5.Location = new Point(88, 323);
+            btnNum5.Location = new Point(72, 189);
             btnNum5.Name = "btnNum5";
-            btnNum5.Size = new Size(65, 65);
+            btnNum5.Size = new Size(63, 56);
             btnNum5.TabIndex = 9;
             btnNum5.Text = "5";
             btnNum5.UseVisualStyleBackColor = false;
@@ -202,9 +210,9 @@
             btnNum4.FlatStyle = FlatStyle.Flat;
             btnNum4.Font = new Font("Microsoft Sans Serif", 24F);
             btnNum4.ForeColor = Color.White;
-            btnNum4.Location = new Point(17, 323);
+            btnNum4.Location = new Point(3, 189);
             btnNum4.Name = "btnNum4";
-            btnNum4.Size = new Size(65, 65);
+            btnNum4.Size = new Size(63, 56);
             btnNum4.TabIndex = 8;
             btnNum4.Text = "4";
             btnNum4.UseVisualStyleBackColor = false;
@@ -217,9 +225,9 @@
             btnNum3.FlatStyle = FlatStyle.Flat;
             btnNum3.Font = new Font("Microsoft Sans Serif", 24F);
             btnNum3.ForeColor = Color.White;
-            btnNum3.Location = new Point(159, 394);
+            btnNum3.Location = new Point(141, 251);
             btnNum3.Name = "btnNum3";
-            btnNum3.Size = new Size(65, 65);
+            btnNum3.Size = new Size(63, 56);
             btnNum3.TabIndex = 13;
             btnNum3.Text = "3";
             btnNum3.UseVisualStyleBackColor = false;
@@ -232,9 +240,9 @@
             btnNum2.FlatStyle = FlatStyle.Flat;
             btnNum2.Font = new Font("Microsoft Sans Serif", 24F);
             btnNum2.ForeColor = Color.White;
-            btnNum2.Location = new Point(88, 394);
+            btnNum2.Location = new Point(72, 251);
             btnNum2.Name = "btnNum2";
-            btnNum2.Size = new Size(65, 65);
+            btnNum2.Size = new Size(63, 56);
             btnNum2.TabIndex = 12;
             btnNum2.Text = "2";
             btnNum2.UseVisualStyleBackColor = false;
@@ -247,9 +255,9 @@
             btnNum1.FlatStyle = FlatStyle.Flat;
             btnNum1.Font = new Font("Microsoft Sans Serif", 24F);
             btnNum1.ForeColor = Color.White;
-            btnNum1.Location = new Point(17, 394);
+            btnNum1.Location = new Point(3, 251);
             btnNum1.Name = "btnNum1";
-            btnNum1.Size = new Size(65, 65);
+            btnNum1.Size = new Size(63, 56);
             btnNum1.TabIndex = 11;
             btnNum1.Text = "1";
             btnNum1.UseVisualStyleBackColor = false;
@@ -262,9 +270,9 @@
             btnNum0.FlatStyle = FlatStyle.Flat;
             btnNum0.Font = new Font("Microsoft Sans Serif", 24F);
             btnNum0.ForeColor = Color.White;
-            btnNum0.Location = new Point(88, 465);
+            btnNum0.Location = new Point(72, 313);
             btnNum0.Name = "btnNum0";
-            btnNum0.Size = new Size(65, 65);
+            btnNum0.Size = new Size(63, 60);
             btnNum0.TabIndex = 14;
             btnNum0.Text = "0";
             btnNum0.UseVisualStyleBackColor = false;
@@ -277,9 +285,9 @@
             btnDelete.FlatStyle = FlatStyle.Flat;
             btnDelete.Font = new Font("Microsoft Sans Serif", 24F);
             btnDelete.ForeColor = Color.White;
-            btnDelete.Location = new Point(17, 465);
+            btnDelete.Location = new Point(3, 313);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(65, 65);
+            btnDelete.Size = new Size(63, 60);
             btnDelete.TabIndex = 15;
             btnDelete.Text = "C";
             btnDelete.UseVisualStyleBackColor = false;
@@ -293,9 +301,9 @@
             btnEnter.FlatStyle = FlatStyle.Flat;
             btnEnter.Font = new Font("Microsoft Sans Serif", 24F);
             btnEnter.ForeColor = Color.White;
-            btnEnter.Location = new Point(230, 394);
+            btnEnter.Location = new Point(210, 313);
             btnEnter.Name = "btnEnter";
-            btnEnter.Size = new Size(65, 136);
+            btnEnter.Size = new Size(63, 60);
             btnEnter.TabIndex = 16;
             btnEnter.Text = "=";
             btnEnter.UseVisualStyleBackColor = false;
@@ -308,9 +316,9 @@
             btnBackspace.FlatStyle = FlatStyle.Flat;
             btnBackspace.Font = new Font("Microsoft Sans Serif", 24F);
             btnBackspace.ForeColor = Color.White;
-            btnBackspace.Location = new Point(17, 213);
+            btnBackspace.Location = new Point(72, 84);
             btnBackspace.Name = "btnBackspace";
-            btnBackspace.Size = new Size(82, 43);
+            btnBackspace.Size = new Size(63, 37);
             btnBackspace.TabIndex = 17;
             btnBackspace.Text = "⌫";
             btnBackspace.UseVisualStyleBackColor = false;
@@ -321,7 +329,7 @@
             lblResultado.Anchor = AnchorStyles.Right;
             lblResultado.Font = new Font("Segoe UI", 40F);
             lblResultado.ImageAlign = ContentAlignment.MiddleRight;
-            lblResultado.Location = new Point(32, 69);
+            lblResultado.Location = new Point(24, 96);
             lblResultado.Name = "lblResultado";
             lblResultado.Size = new Size(264, 72);
             lblResultado.TabIndex = 18;
@@ -335,9 +343,9 @@
             btnVirgula.FlatStyle = FlatStyle.Flat;
             btnVirgula.Font = new Font("Microsoft Sans Serif", 24F);
             btnVirgula.ForeColor = Color.White;
-            btnVirgula.Location = new Point(159, 465);
+            btnVirgula.Location = new Point(141, 313);
             btnVirgula.Name = "btnVirgula";
-            btnVirgula.Size = new Size(65, 65);
+            btnVirgula.Size = new Size(63, 60);
             btnVirgula.TabIndex = 20;
             btnVirgula.Text = ",";
             btnVirgula.UseVisualStyleBackColor = false;
@@ -350,9 +358,9 @@
             btnRaizQuadrada.FlatStyle = FlatStyle.Flat;
             btnRaizQuadrada.Font = new Font("Microsoft Sans Serif", 24F);
             btnRaizQuadrada.ForeColor = Color.White;
-            btnRaizQuadrada.Location = new Point(17, 172);
+            btnRaizQuadrada.Location = new Point(3, 84);
             btnRaizQuadrada.Name = "btnRaizQuadrada";
-            btnRaizQuadrada.Size = new Size(82, 34);
+            btnRaizQuadrada.Size = new Size(63, 34);
             btnRaizQuadrada.TabIndex = 22;
             btnRaizQuadrada.Text = "√";
             btnRaizQuadrada.UseVisualStyleBackColor = false;
@@ -365,9 +373,9 @@
             btnPotencia.FlatStyle = FlatStyle.Flat;
             btnPotencia.Font = new Font("Microsoft Sans Serif", 24F);
             btnPotencia.ForeColor = Color.White;
-            btnPotencia.Location = new Point(105, 173);
+            btnPotencia.Location = new Point(3, 3);
             btnPotencia.Name = "btnPotencia";
-            btnPotencia.Size = new Size(90, 34);
+            btnPotencia.Size = new Size(63, 34);
             btnPotencia.TabIndex = 23;
             btnPotencia.Text = "^";
             btnPotencia.UseVisualStyleBackColor = false;
@@ -380,9 +388,9 @@
             btnInverter.FlatStyle = FlatStyle.Flat;
             btnInverter.Font = new Font("Microsoft Sans Serif", 19F);
             btnInverter.ForeColor = Color.White;
-            btnInverter.Location = new Point(201, 174);
+            btnInverter.Location = new Point(210, 84);
             btnInverter.Name = "btnInverter";
-            btnInverter.Size = new Size(94, 34);
+            btnInverter.Size = new Size(63, 34);
             btnInverter.TabIndex = 24;
             btnInverter.Text = "+/-";
             btnInverter.UseVisualStyleBackColor = false;
@@ -409,6 +417,7 @@
             contextMenuStrip1.Items.AddRange(new ToolStripItem[] { calculadoraDeTemperaturaToolStripMenuItem, calculadoraDeIMCToolStripMenuItem, porcentagemToolStripMenuItem, temperaturaToolStripMenuItem });
             contextMenuStrip1.Name = "contextMenuStrip1";
             contextMenuStrip1.Size = new Size(146, 92);
+            contextMenuStrip1.Opening += contextMenuStrip1_Opening;
             // 
             // calculadoraDeTemperaturaToolStripMenuItem
             // 
@@ -435,39 +444,61 @@
             temperaturaToolStripMenuItem.Size = new Size(145, 22);
             temperaturaToolStripMenuItem.Text = "Temperatura";
             // 
+            // tableLayoutDigitos
+            // 
+            tableLayoutDigitos.ColumnCount = 4;
+            tableLayoutDigitos.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutDigitos.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutDigitos.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutDigitos.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutDigitos.Controls.Add(btnDelete, 0, 5);
+            tableLayoutDigitos.Controls.Add(btnNum0, 1, 5);
+            tableLayoutDigitos.Controls.Add(btnVirgula, 2, 5);
+            tableLayoutDigitos.Controls.Add(btnEnter, 3, 5);
+            tableLayoutDigitos.Controls.Add(btnRaizQuadrada, 0, 1);
+            tableLayoutDigitos.Controls.Add(btnNum1, 0, 4);
+            tableLayoutDigitos.Controls.Add(btnNum2, 1, 4);
+            tableLayoutDigitos.Controls.Add(btnBackspace, 1, 1);
+            tableLayoutDigitos.Controls.Add(btnNum3, 2, 4);
+            tableLayoutDigitos.Controls.Add(btnMultiplication, 2, 1);
+            tableLayoutDigitos.Controls.Add(btnNum9, 2, 2);
+            tableLayoutDigitos.Controls.Add(btnDivision, 3, 2);
+            tableLayoutDigitos.Controls.Add(btnNum6, 2, 3);
+            tableLayoutDigitos.Controls.Add(btnNum8, 1, 2);
+            tableLayoutDigitos.Controls.Add(btnAdittion, 3, 4);
+            tableLayoutDigitos.Controls.Add(btnNum7, 0, 2);
+            tableLayoutDigitos.Controls.Add(btnNum5, 1, 3);
+            tableLayoutDigitos.Controls.Add(btnSubtraction, 3, 3);
+            tableLayoutDigitos.Controls.Add(btnNum4, 0, 3);
+            tableLayoutDigitos.Controls.Add(btnInverter, 3, 1);
+            tableLayoutDigitos.Controls.Add(btnPotencia, 0, 0);
+            tableLayoutDigitos.Location = new Point(12, 212);
+            tableLayoutDigitos.Name = "tableLayoutDigitos";
+            tableLayoutDigitos.RowCount = 6;
+            tableLayoutDigitos.RowStyles.Add(new RowStyle(SizeType.Percent, 21.5425529F));
+            tableLayoutDigitos.RowStyles.Add(new RowStyle(SizeType.Percent, 11.4361706F));
+            tableLayoutDigitos.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
+            tableLayoutDigitos.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
+            tableLayoutDigitos.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
+            tableLayoutDigitos.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
+            tableLayoutDigitos.Size = new Size(276, 376);
+            tableLayoutDigitos.TabIndex = 26;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(308, 546);
+            ClientSize = new Size(300, 600);
             Controls.Add(btnOpcoes);
-            Controls.Add(btnInverter);
-            Controls.Add(btnPotencia);
-            Controls.Add(btnRaizQuadrada);
-            Controls.Add(btnVirgula);
             Controls.Add(lblResultado);
-            Controls.Add(btnBackspace);
-            Controls.Add(btnEnter);
-            Controls.Add(btnDelete);
-            Controls.Add(btnNum0);
-            Controls.Add(btnNum3);
-            Controls.Add(btnNum2);
-            Controls.Add(btnNum1);
-            Controls.Add(btnNum6);
-            Controls.Add(btnNum5);
-            Controls.Add(btnNum4);
-            Controls.Add(btnNum9);
-            Controls.Add(btnNum8);
-            Controls.Add(btnNum7);
-            Controls.Add(btnSubtraction);
-            Controls.Add(btnAdittion);
-            Controls.Add(btnMultiplication);
-            Controls.Add(btnDivision);
+            Controls.Add(tableLayoutDigitos);
             Name = "Form1";
-            Opacity = 0.95D;
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Calculadora";
+            Load += Form1_Load;
             contextMenuStrip1.ResumeLayout(false);
+            tableLayoutDigitos.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -500,5 +531,6 @@
         private ToolStripMenuItem calculadoraDeIMCToolStripMenuItem;
         private ToolStripMenuItem porcentagemToolStripMenuItem;
         private ToolStripMenuItem temperaturaToolStripMenuItem;
+        private TableLayoutPanel tableLayoutDigitos;
     }
 }

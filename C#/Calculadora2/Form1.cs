@@ -1,6 +1,11 @@
 // Importa funcionalidade para suporte a cultura (ex: separador decimal)
 using System.Globalization;
 
+// WinBlur para efeito Glassmorphism
+using WinBlur;
+using static WinBlur.UI;
+
+
 // Define a classe principal do formulário da calculadora
 namespace Calculadora2
 {
@@ -15,6 +20,8 @@ namespace Calculadora2
         {
             InitializeComponent();
             lblResultado.Text = resultado.ToString();
+            this.Load += new EventHandler(Form1_Load);
+
         }
 
         // Executa a operação matemática com base no operador selecionado
@@ -43,6 +50,22 @@ namespace Calculadora2
                     break;
             }
         }
+
+        private void calculadoraDeIMCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Código para abrir a calculadora de IMC ou o que você quiser aqui
+        }
+
+        private void porcentagemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Código para abrir a calculadora de porcentagem ou outra ação
+        }
+
+        private void temperaturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Código para abrir a calculadora de temperatura ou outra ação
+        }
+
 
         // Adiciona o número digitado ao número atual (num1 ou num2), atualizando o valor exibido
         private void AdicionarNumero(int numero)
@@ -322,5 +345,33 @@ namespace Calculadora2
         {
             contextMenuStrip1.Show(btnOpcoes, new Point(0, btnOpcoes.Height));
         }
+
+        private void contextMenuStrip1_Opening(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // Para Light Mode
+            this.BackColor = Color.White;
+            SetBlurStyle(frm: this, blurType: BlurType.Acrylic, designMode: Mode.DarkMode, showWindowsTitle: true);
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    btn.FlatStyle = FlatStyle.Flat;
+                    btn.FlatAppearance.BorderSize = 1;
+                    btn.FlatAppearance.BorderColor = Color.Gray;
+                    btn.UseVisualStyleBackColor = false;
+                    btn.BackColor = Color.FromArgb(80, 30, 30, 30); // fundo escuro translúcido
+                    btn.ForeColor = Color.White;
+                }
+            }
+
+
+        }
+
+
     }
 }
