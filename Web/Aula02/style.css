@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(220, 221, 255);
+    background-image: url("ele_fante.webp");
+    background-repeat: round;
+}
+
+p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titulo{
+    background-color: aqua;
+}
+
+.titulo2{
+    background-color: blueviolet;
+}
