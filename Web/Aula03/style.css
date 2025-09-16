@@ -1,0 +1,32 @@
+body{
+        text-align: center;
+    }
+    .bloco1, .bloco2, .bloco3{
+        display: inline-block;
+        width: 150px;
+        height: 200px;
+ 
+    }
+ 
+    .bloco1{
+        background-color: #ff00ff;
+        width: 400px;
+        height: 500px;
+    }
+    .bloco2{
+        background-color: #0044cc;
+        width: 400px;
+        height: 500px;
+        position: fixed;
+        opacity: 0.3;
+        left: 10px;
+    }
+    .bloco3{
+        background-color: #ffdd00;
+        width: 400px;
+        height: 500px;
+    }
+
+    img{
+        float: left;
+    }
