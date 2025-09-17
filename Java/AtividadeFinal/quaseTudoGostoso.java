@@ -2,7 +2,6 @@ public class quaseTudoGostoso {
     public static void main(String[] args) {
         int escolha = 0;
         do{
-        
             System.out.println("-----------------------------------------");
             System.out.println("Bem vindo ao sistema Quase Tudo Gostoso!");
             System.out.println("-----------------------------------------");

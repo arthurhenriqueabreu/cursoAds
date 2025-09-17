@@ -1,0 +1,81 @@
+/* Centraliza a div no meio da tela */
+body {
+  background-color: #363B51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* ocupa toda a altura da tela */
+  margin: 0;
+}
+
+/* Caixa de login */
+.login {
+  background-color: #2C3145;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  width: 320px;
+  text-align: center;
+}
+
+/* Título */
+.login h1 {
+  color: #fff;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Inputs */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  color: #D2D5DC;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #D2D5DC;
+  color: #fff;
+  padding: 8px 0;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Botão */
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background-color: #B43755;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-login:hover {
+  background-color: #922d46;
+}
+
+/* Link */
+.forgot {
+  display: block;
+  margin-top: 20px;
+  color: #D2D5DC;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
