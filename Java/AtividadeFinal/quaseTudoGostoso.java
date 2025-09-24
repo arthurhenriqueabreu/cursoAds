@@ -1,16 +1,31 @@
+
+import java.util.Scanner;
+
 public class quaseTudoGostoso {
     public static void main(String[] args) {
         int escolha = 0;
+        Scanner sc = new Scanner(System.in);
         do{
-            System.out.println("-----------------------------------------");
-            System.out.println("Bem vindo ao sistema Quase Tudo Gostoso!");
-            System.out.println("-----------------------------------------");
-            System.out.println("[1]Visualizar receitas disponíveis");
-            System.out.println("[2]Adicionar uma receita");
-            System.out.println("[3]Editar uma receita");
-            System.out.println("[4]Deletar uma receita");
-            System.out.println("[5]Mostrar detalhes da receita");
-            System.out.println("[6]Sair");
+            System.out.println("""
+                               +----------------------+\r
+                               |       Quase tudo     |\r
+                               |         Gostoso      |\r
+                               |----------------------|\r
+                               |1. Adicionar Receita  |\r
+                               |----------------------|\r
+                               |2. Listar Receitas    |\r
+                               |----------------------|\r
+                               |3. Editar receita     |\r
+                               |----------------------|\r
+                               |4. Listar y           |\r
+                               +----------------------+"""
+            );
+                                escolha = sc.nextInt();
         }while(escolha !=6);
+        switch (escolha) {
+            case 1:
+                System.out.println();
+                break;
+        }
     }
 }

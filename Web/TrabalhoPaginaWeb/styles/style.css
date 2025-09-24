@@ -1,0 +1,74 @@
+body {
+    font-family: "SUSE Mono", sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+header {
+    background: #1e1e1e;
+    display: flex;
+    justify-content: space-between; /* Nome à esquerda, nav à direita */
+    align-items: center;
+    padding: 10px 40px;
+    border-bottom: 2px solid rgb(148, 148, 148);
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 24px; /* Espaço entre os links */
+    margin: 0;
+    padding: 0 60px;
+}
+
+nav a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s;
+    text-decoration: underline 2px rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+}
+
+nav a:hover {
+    text-decoration-color: #00ffcc;
+}
+
+
+section {
+    align-content: flex-start;
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1e1e1e;
+    margin-top: 2rem;
+}
+
+.myselfdiv{
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+#myself{
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    transition: 0.05s;
+}
+
+#myself:hover{
+    border: 6px solid #ffffff;
+}
