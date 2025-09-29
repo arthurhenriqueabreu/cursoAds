@@ -1,4 +1,7 @@
 public class Receita {
+
+    public Receita(String titulo1) {
+    }
     private int idReceita;
     private String titulo, descricao, caminhoImagem;
 

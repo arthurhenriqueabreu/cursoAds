@@ -1,8 +1,10 @@
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class quaseTudoGostoso {
+public class QuaseTudoGostoso {
     public static void main(String[] args) {
+        ArrayList<Receita> receitas = new ArrayList<>();
         int escolha = 0;
         Scanner sc = new Scanner(System.in);
         do{
@@ -17,15 +19,28 @@ public class quaseTudoGostoso {
                                |----------------------|\r
                                |3. Editar receita     |\r
                                |----------------------|\r
-                               |4. Listar y           |\r
+                               |4. Sair               |\r
                                +----------------------+"""
             );
-                                escolha = sc.nextInt();
-        }while(escolha !=6);
-        switch (escolha) {
-            case 1:
-                System.out.println();
-                break;
-        }
+            escolha = sc.nextInt();
+            sc.nextLine();
+
+            switch (escolha) {
+                case 1:
+                    String titulo;
+                    int idReceita;
+                    System.out.println("Define o título da receita: ");
+                    titulo = sc.nextLine();
+                    
+                    break;
+                case 2:
+                    System.out.println("\n=== Lista de Receitas ===");
+                    
+                    break;
+                case 4:
+                    System.out.println("Até logo!");
+                    break;
+            }
+        }while(escolha !=4);
     }
 }
