@@ -1,0 +1,233 @@
+{
+  "version": 1,
+  "author": "Arthur Henrique Abreu",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 165,
+      "left": 20,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-7segment",
+      "id": "display",
+      "top": 10,
+      "left": 630,
+      "attrs": {
+        "common": "cathode",
+        "color": "red",
+        "digits": "1"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnStart",
+      "top": 380,
+      "left": 535,
+      "attrs": {
+        "color": "green",
+        "label": "INICIAR / DESLIGAR",
+        "key": "I"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnDraw",
+      "top": 380,
+      "left": 750,
+      "attrs": {
+        "color": "blue",
+        "label": "SORTEAR",
+        "key": "S"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rA",
+      "top": 40,
+      "left": 460,
+      "attrs": {
+        "value": "220"
+      },
+      "rotate": 90
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rB",
+      "top": 82,
+      "left": 460,
+      "attrs": {
+        "value": "220"
+      },
+      "rotate": 90
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rC",
+      "top": 124,
+      "left": 460,
+      "attrs": {
+        "value": "220"
+      },
+      "rotate": 90
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rD",
+      "top": 166,
+      "left": 460,
+      "attrs": {
+        "value": "220"
+      },
+      "rotate": 90
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rE",
+      "top": 208,
+      "left": 460,
+      "attrs": {
+        "value": "220"
+      },
+      "rotate": 90
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rF",
+      "top": 250,
+      "left": 460,
+      "attrs": {
+        "value": "220"
+      },
+      "rotate": 90
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rG",
+      "top": 292,
+      "left": 460,
+      "attrs": {
+        "value": "220"
+      },
+      "rotate": 90
+    }
+  ],
+  "connections": [
+    [
+      "display:COM",
+      "uno:GND.1",
+      "black",
+      []
+    ],
+    [
+      "btnStart:1.l",
+      "uno:9",
+      "green",
+      []
+    ],
+    [
+      "btnStart:2.l",
+      "uno:GND.1",
+      "black",
+      []
+    ],
+    [
+      "btnDraw:1.l",
+      "uno:10",
+      "blue",
+      []
+    ],
+    [
+      "btnDraw:2.l",
+      "uno:GND.1",
+      "black",
+      []
+    ],
+    [
+      "uno:2",
+      "rA:1",
+      "#6b7280",
+      []
+    ],
+    [
+      "rA:2",
+      "display:A",
+      "#e11d48",
+      []
+    ],
+    [
+      "uno:3",
+      "rB:1",
+      "#6b7280",
+      []
+    ],
+    [
+      "rB:2",
+      "display:B",
+      "#e11d48",
+      []
+    ],
+    [
+      "uno:4",
+      "rC:1",
+      "#6b7280",
+      []
+    ],
+    [
+      "rC:2",
+      "display:C",
+      "#e11d48",
+      []
+    ],
+    [
+      "uno:5",
+      "rD:1",
+      "#6b7280",
+      []
+    ],
+    [
+      "rD:2",
+      "display:D",
+      "#e11d48",
+      []
+    ],
+    [
+      "uno:6",
+      "rE:1",
+      "#6b7280",
+      []
+    ],
+    [
+      "rE:2",
+      "display:E",
+      "#e11d48",
+      []
+    ],
+    [
+      "uno:7",
+      "rF:1",
+      "#6b7280",
+      []
+    ],
+    [
+      "rF:2",
+      "display:F",
+      "#e11d48",
+      []
+    ],
+    [
+      "uno:8",
+      "rG:1",
+      "#6b7280",
+      []
+    ],
+    [
+      "rG:2",
+      "display:G",
+      "#e11d48",
+      []
+    ]
+  ]
+}
